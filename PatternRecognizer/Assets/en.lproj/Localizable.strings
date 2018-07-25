@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  PatternRecognizer
+
+  Created by Karol Wawrzyniak on 25/07/2018.
+  Copyright © 2018 KAWA. All rights reserved.
+*/
+
+"recognize.tab.title" = "Recognize";
+"settings.tab.title" = "Settings";
+"settings.draw_new" = "Draw new";
+"settings.load" = "View existings";
+"draw_and_save.name.textfield.placeholder" = "First draw, then name your shape";
