@@ -37,12 +37,7 @@ class RecognizeTabDecorator: ViewControllerDecorator {
         vc.view.addSubview(drawingView)
         vc.view.addSubview(label)
 
-        drawingView.snp.makeConstraints { (maker) in
-            maker.top.equalToSuperview()
-            maker.left.equalToSuperview()
-            maker.right.equalToSuperview()
-            maker.bottom.equalToSuperview()
-        }
+        drawingView.snp.pinToSuperview()
 
         label.snp.makeConstraints { (maker) in
             maker.top.equalToSuperview().offset(76)

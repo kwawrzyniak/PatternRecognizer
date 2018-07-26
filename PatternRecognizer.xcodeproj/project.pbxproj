@@ -41,7 +41,23 @@
 		CBC959CE2109B8C20008FF94 /* UIImage+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC959CD2109B8C20008FF94 /* UIImage+UIView.swift */; };
 		CBC959D22109E2080008FF94 /* PatternRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC959D12109E2080008FF94 /* PatternRecognizer.swift */; };
 		CBC959D6210A04310008FF94 /* RecognizeTabDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC959D5210A04310008FF94 /* RecognizeTabDecorator.swift */; };
+		CBC959DE210A21EF0008FF94 /* PatternRecognizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC959DD210A21EF0008FF94 /* PatternRecognizerTests.swift */; };
+		CBC959E7210A22190008FF94 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC959E5210A22190008FF94 /* Nimble.framework */; };
+		CBC959E8210A22190008FF94 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC959E6210A22190008FF94 /* Quick.framework */; };
+		CBC959EB210A23160008FF94 /* PatternRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC959E9210A22470008FF94 /* PatternRepositorySpec.swift */; };
+		CBC959EF210A24470008FF94 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CBC959E5210A22190008FF94 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBC959F0210A24470008FF94 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CBC959E6210A22190008FF94 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBC959E0210A21EF0008FF94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB2409712108F2D30047C2B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB2409782108F2D30047C2B4;
+			remoteInfo = PatternRecognizer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		CB24099F2108F5480047C2B4 /* Embed Frameworks */ = {
@@ -55,6 +71,17 @@
 				CB2409DE210923F70047C2B4 /* MagicalRecord.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC959EE210A243A0008FF94 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CBC959EF210A24470008FF94 /* Nimble.framework in CopyFiles */,
+				CBC959F0210A24470008FF94 /* Quick.framework in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -93,6 +120,12 @@
 		CBC959CD2109B8C20008FF94 /* UIImage+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+UIView.swift"; sourceTree = "<group>"; };
 		CBC959D12109E2080008FF94 /* PatternRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRecognizer.swift; sourceTree = "<group>"; };
 		CBC959D5210A04310008FF94 /* RecognizeTabDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizeTabDecorator.swift; sourceTree = "<group>"; };
+		CBC959DB210A21EF0008FF94 /* PatternRecognizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatternRecognizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC959DD210A21EF0008FF94 /* PatternRecognizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRecognizerTests.swift; sourceTree = "<group>"; };
+		CBC959DF210A21EF0008FF94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBC959E5210A22190008FF94 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		CBC959E6210A22190008FF94 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		CBC959E9210A22470008FF94 /* PatternRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRepositorySpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,12 +139,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBC959D8210A21EF0008FF94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC959E8210A22190008FF94 /* Quick.framework in Frameworks */,
+				CBC959E7210A22190008FF94 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		CB2409702108F2D30047C2B4 = {
 			isa = PBXGroup;
 			children = (
+				CBC959DC210A21EF0008FF94 /* PatternRecognizerTests */,
 				CB24099A2108F5120047C2B4 /* Frameworks */,
 				CB24097B2108F2D30047C2B4 /* PatternRecognizer */,
 				CB24097A2108F2D30047C2B4 /* Products */,
@@ -122,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				CB2409792108F2D30047C2B4 /* PatternRecognizer.app */,
+				CBC959DB210A21EF0008FF94 /* PatternRecognizerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,6 +198,8 @@
 		CB24099A2108F5120047C2B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CBC959E5210A22190008FF94 /* Nimble.framework */,
+				CBC959E6210A22190008FF94 /* Quick.framework */,
 				CB2409DB210923F00047C2B4 /* MagicalRecord.framework */,
 				CB2409B3210902700047C2B4 /* CommonQuail.framework */,
 				CB24099B2108F5410047C2B4 /* SnapKit.framework */,
@@ -278,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				CB2409D8210922D60047C2B4 /* Model.xcdatamodeld */,
+				CBC959E9210A22470008FF94 /* PatternRepositorySpec.swift */,
 				CB2409DF2109244A0047C2B4 /* PatternRepository.swift */,
 			);
 			path = Model;
@@ -316,6 +363,15 @@
 			path = Recognizer;
 			sourceTree = "<group>";
 		};
+		CBC959DC210A21EF0008FF94 /* PatternRecognizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBC959DD210A21EF0008FF94 /* PatternRecognizerTests.swift */,
+				CBC959DF210A21EF0008FF94 /* Info.plist */,
+			);
+			path = PatternRecognizerTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -337,6 +393,25 @@
 			productReference = CB2409792108F2D30047C2B4 /* PatternRecognizer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CBC959DA210A21EF0008FF94 /* PatternRecognizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC959E4210A21EF0008FF94 /* Build configuration list for PBXNativeTarget "PatternRecognizerTests" */;
+			buildPhases = (
+				CBC959D7210A21EF0008FF94 /* Sources */,
+				CBC959D8210A21EF0008FF94 /* Frameworks */,
+				CBC959D9210A21EF0008FF94 /* Resources */,
+				CBC959EE210A243A0008FF94 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBC959E1210A21EF0008FF94 /* PBXTargetDependency */,
+			);
+			name = PatternRecognizerTests;
+			productName = PatternRecognizerTests;
+			productReference = CBC959DB210A21EF0008FF94 /* PatternRecognizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -349,6 +424,10 @@
 				TargetAttributes = {
 					CB2409782108F2D30047C2B4 = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					CBC959DA210A21EF0008FF94 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CB2409782108F2D30047C2B4;
 					};
 				};
 			};
@@ -366,6 +445,7 @@
 			projectRoot = "";
 			targets = (
 				CB2409782108F2D30047C2B4 /* PatternRecognizer */,
+				CBC959DA210A21EF0008FF94 /* PatternRecognizerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -379,6 +459,13 @@
 				CB2409AB2108FC510047C2B4 /* Localizable.strings in Resources */,
 				CB2409BD2109032B0047C2B4 /* TextTableViewCell.xib in Resources */,
 				CB2409862108F2D40047C2B4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC959D9210A21EF0008FF94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +503,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBC959D7210A21EF0008FF94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC959DE210A21EF0008FF94 /* PatternRecognizerTests.swift in Sources */,
+				CBC959EB210A23160008FF94 /* PatternRepositorySpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBC959E1210A21EF0008FF94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB2409782108F2D30047C2B4 /* PatternRecognizer */;
+			targetProxy = CBC959E0210A21EF0008FF94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CB2409872108F2D40047C2B4 /* LaunchScreen.storyboard */ = {
@@ -600,6 +704,52 @@
 			};
 			name = Release;
 		};
+		CBC959E2210A21EF0008FF94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PatternRecognizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kawa.PatternRecognizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PatternRecognizer.app/PatternRecognizer";
+			};
+			name = Debug;
+		};
+		CBC959E3210A21EF0008FF94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PatternRecognizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kawa.PatternRecognizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PatternRecognizer.app/PatternRecognizer";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -617,6 +767,15 @@
 			buildConfigurations = (
 				CB24098E2108F2D40047C2B4 /* Debug */,
 				CB24098F2108F2D40047C2B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBC959E4210A21EF0008FF94 /* Build configuration list for PBXNativeTarget "PatternRecognizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC959E2210A21EF0008FF94 /* Debug */,
+				CBC959E3210A21EF0008FF94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
