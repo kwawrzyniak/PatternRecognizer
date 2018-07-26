@@ -99,13 +99,13 @@ class PatternRecognizer: UIGestureRecognizer {
         return distance
     }
 
-    private func distance(angles: [Float]) -> Float {
+    private func distance(firstAngles: [Float], secondAngles: [Float]) -> Float {
         var distance: Float = 0
-        let minCount = min(angles.count, modelAngles.count) - 1
+        let minCount = min(firstAngles.count, secondAngles.count) - 1
 
         for i in 0...minCount {
-            let first = modelAngles[i]
-            let second = angles[i]
+            let first = secondAngles[i]
+            let second = firstAngles[i]
             distance += distanceBetweenAngle(first: first, second: second)
         }
 
@@ -152,7 +152,7 @@ class PatternRecognizer: UIGestureRecognizer {
         }
 
         let sampled = sample(points: angles)
-        let measuredDistance = distance(angles: sampled)
+        let measuredDistance = distance(firstAngles: sampled, secondAngles: modelAngles)
 
         if measuredDistance < 0.75 {
             state = .recognized

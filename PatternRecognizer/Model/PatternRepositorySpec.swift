@@ -26,6 +26,10 @@ class PatternRepositorySpec: QuickSpec {
                 sut = PatternRepositoryImpl()
             }
 
+            afterEach {
+                MagicalRecord.cleanUp()
+            }
+
             describe("Create new pattern") {
 
                 var pattern: Pattern!
@@ -34,8 +38,30 @@ class PatternRepositorySpec: QuickSpec {
                     pattern = sut.createPattern(angles: [10, 11], name: "44", image: UIImage())
                 }
 
-                it("should have name") {
+                it("should have name 44") {
                     expect(pattern.name).to(equal("44"))
+                }
+
+                it("should correct angles") {
+                    let angles = pattern.angles
+                    expect(angles).to(equal([10, 11]))
+                }
+
+
+            }
+
+            describe("Load all patters") {
+
+                var patterns: [Pattern]!
+
+                beforeEach {
+                    _ = sut.createPattern(angles: [10, 11], name: "44", image: UIImage())
+                    _ = sut.createPattern(angles: [10, 12], name: "45", image: UIImage())
+                    patterns = sut.allPatternsSorted()
+                }
+
+                it("should have 2 patterns") {
+                    expect(patterns.count).to(equal(2))
                 }
 
             }

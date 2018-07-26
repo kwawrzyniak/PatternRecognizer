@@ -37,6 +37,8 @@
 		CB2409E02109244A0047C2B4 /* PatternRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2409DF2109244A0047C2B4 /* PatternRepository.swift */; };
 		CB372C862109AED300814F40 /* DrawAndSaveRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB372C852109AED300814F40 /* DrawAndSaveRouter.swift */; };
 		CB372C892109B19400814F40 /* ListOfPatternsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB372C882109B19400814F40 /* ListOfPatternsVC.swift */; };
+		CB3806C8210A43CA00DD6ACF /* PatternRecognizerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3806C7210A43CA00DD6ACF /* PatternRecognizerSpec.swift */; };
+		CB3806CB210A44E300DD6ACF /* FakeTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3806CA210A44E300DD6ACF /* FakeTouch.swift */; };
 		CBC959CC2109B6320008FF94 /* PatternsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC959CB2109B6320008FF94 /* PatternsProvider.swift */; };
 		CBC959CE2109B8C20008FF94 /* UIImage+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC959CD2109B8C20008FF94 /* UIImage+UIView.swift */; };
 		CBC959D22109E2080008FF94 /* PatternRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC959D12109E2080008FF94 /* PatternRecognizer.swift */; };
@@ -116,6 +118,8 @@
 		CB2409DF2109244A0047C2B4 /* PatternRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRepository.swift; sourceTree = "<group>"; };
 		CB372C852109AED300814F40 /* DrawAndSaveRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawAndSaveRouter.swift; sourceTree = "<group>"; };
 		CB372C882109B19400814F40 /* ListOfPatternsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfPatternsVC.swift; sourceTree = "<group>"; };
+		CB3806C7210A43CA00DD6ACF /* PatternRecognizerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRecognizerSpec.swift; sourceTree = "<group>"; };
+		CB3806CA210A44E300DD6ACF /* FakeTouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTouch.swift; sourceTree = "<group>"; };
 		CBC959CB2109B6320008FF94 /* PatternsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsProvider.swift; sourceTree = "<group>"; };
 		CBC959CD2109B8C20008FF94 /* UIImage+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+UIView.swift"; sourceTree = "<group>"; };
 		CBC959D12109E2080008FF94 /* PatternRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRecognizer.swift; sourceTree = "<group>"; };
@@ -347,6 +351,14 @@
 			path = ListOfPatterns;
 			sourceTree = "<group>";
 		};
+		CB3806C9210A44CE00DD6ACF /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				CB3806CA210A44E300DD6ACF /* FakeTouch.swift */,
+			);
+			path = Fakes;
+			sourceTree = "<group>";
+		};
 		CBC959CF2109B8C50008FF94 /* UImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				CBC959D12109E2080008FF94 /* PatternRecognizer.swift */,
+				CB3806C7210A43CA00DD6ACF /* PatternRecognizerSpec.swift */,
 			);
 			path = Recognizer;
 			sourceTree = "<group>";
@@ -366,6 +379,7 @@
 		CBC959DC210A21EF0008FF94 /* PatternRecognizerTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB3806C9210A44CE00DD6ACF /* Fakes */,
 				CBC959DD210A21EF0008FF94 /* PatternRecognizerTests.swift */,
 				CBC959DF210A21EF0008FF94 /* Info.plist */,
 			);
@@ -507,6 +521,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB3806CB210A44E300DD6ACF /* FakeTouch.swift in Sources */,
+				CB3806C8210A43CA00DD6ACF /* PatternRecognizerSpec.swift in Sources */,
 				CBC959DE210A21EF0008FF94 /* PatternRecognizerTests.swift in Sources */,
 				CBC959EB210A23160008FF94 /* PatternRepositorySpec.swift in Sources */,
 			);
