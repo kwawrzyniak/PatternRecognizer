@@ -41,8 +41,6 @@
 		CB3806CB210A44E300DD6ACF /* FakeTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3806CA210A44E300DD6ACF /* FakeTouch.swift */; };
 		CB3806D0210A52E800DD6ACF /* Unbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3806CD210A52DA00DD6ACF /* Unbox.framework */; };
 		CB3806D1210A52E800DD6ACF /* Unbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB3806CD210A52DA00DD6ACF /* Unbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CB3806D2210A52E800DD6ACF /* Wrap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3806CC210A52D900DD6ACF /* Wrap.framework */; };
-		CB3806D3210A52E800DD6ACF /* Wrap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB3806CC210A52D900DD6ACF /* Wrap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB3806D6210A535200DD6ACF /* HttpHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3806D5210A535200DD6ACF /* HttpHandler.swift */; };
 		CB3806D8210A55C800DD6ACF /* PatternItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3806D7210A55C800DD6ACF /* PatternItem.swift */; };
 		CB3806DB210A56F600DD6ACF /* FetchPatternsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3806DA210A56F600DD6ACF /* FetchPatternsRequest.swift */; };
@@ -79,7 +77,6 @@
 				CB24099E2108F5480047C2B4 /* SnapKit.framework in Embed Frameworks */,
 				CB2409DE210923F70047C2B4 /* MagicalRecord.framework in Embed Frameworks */,
 				CB3806D1210A52E800DD6ACF /* Unbox.framework in Embed Frameworks */,
-				CB3806D3210A52E800DD6ACF /* Wrap.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,7 +126,6 @@
 		CB372C882109B19400814F40 /* ListOfPatternsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfPatternsVC.swift; sourceTree = "<group>"; };
 		CB3806C7210A43CA00DD6ACF /* PatternRecognizerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRecognizerSpec.swift; sourceTree = "<group>"; };
 		CB3806CA210A44E300DD6ACF /* FakeTouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTouch.swift; sourceTree = "<group>"; };
-		CB3806CC210A52D900DD6ACF /* Wrap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Wrap.framework; path = Carthage/Build/iOS/Wrap.framework; sourceTree = "<group>"; };
 		CB3806CD210A52DA00DD6ACF /* Unbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Unbox.framework; path = Carthage/Build/iOS/Unbox.framework; sourceTree = "<group>"; };
 		CB3806D5210A535200DD6ACF /* HttpHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHandler.swift; sourceTree = "<group>"; };
 		CB3806D7210A55C800DD6ACF /* PatternItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternItem.swift; sourceTree = "<group>"; };
@@ -155,7 +151,6 @@
 				CB2409B5210902760047C2B4 /* CommonQuail.framework in Frameworks */,
 				CB2409DD210923F70047C2B4 /* MagicalRecord.framework in Frameworks */,
 				CB3806D0210A52E800DD6ACF /* Unbox.framework in Frameworks */,
-				CB3806D2210A52E800DD6ACF /* Wrap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +217,6 @@
 				CB3806DC210A5DB600DD6ACF /* Nimble.framework */,
 				CB3806DD210A5DB600DD6ACF /* Quick.framework */,
 				CB3806CD210A52DA00DD6ACF /* Unbox.framework */,
-				CB3806CC210A52D900DD6ACF /* Wrap.framework */,
 				CB2409DB210923F00047C2B4 /* MagicalRecord.framework */,
 				CB2409B3210902700047C2B4 /* CommonQuail.framework */,
 				CB24099B2108F5410047C2B4 /* SnapKit.framework */,
