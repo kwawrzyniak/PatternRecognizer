@@ -9,10 +9,11 @@
 import UIKit
 import CommonQuail
 
-class SettingsItem: GenericTableViewDataItem<SettingsTableViewCell>, TableViewCellDecorator {
+class SettingsItem: GenericTableViewDataItem<TextTableViewCell>, TableViewCellDecorator {
 
     let itemTitle: String
     let flowAtClick: SettingsFlow
+
     init(title: String, flow: SettingsFlow) {
         self.itemTitle = title
         self.flowAtClick = flow
@@ -20,11 +21,10 @@ class SettingsItem: GenericTableViewDataItem<SettingsTableViewCell>, TableViewCe
 
     func decorate(cell: UITableViewCellLoadableProtocol) {
 
-        guard let cell = cell as? SettingsTableViewCell else {
+        guard let cell = cell as? TextTableViewCell else {
             return
         }
 
         cell.settingsTitleLabel.text = itemTitle
-
     }
 }

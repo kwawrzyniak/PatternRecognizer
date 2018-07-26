@@ -12,6 +12,15 @@ class DrawingView: UIView {
 
     var capturedPoints: [CGPoint] = [CGPoint]()
 
+    func clear() {
+        capturedPoints.removeAll()
+        setNeedsDisplay()
+    }
+
+    func pathAngles() -> [Float] {
+        return capturedPoints.calculateAnglesBetweenPoints()
+    }
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
 

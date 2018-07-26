@@ -11,3 +11,4 @@
 "settings.draw_new" = "Draw new";
 "settings.load" = "View existings";
 "draw_and_save.name.textfield.placeholder" = "First draw, then name your shape";
+"recognize.tab.regognized.label" = "Recognized shape:";

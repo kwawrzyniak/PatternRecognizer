@@ -22,10 +22,17 @@ enum SettingsFlow {
         case .drawNewPattern:
             return DrawAction()
         case .viewSavedPatterns:
-            return DrawAction()
+            return ViewSavedPatters()
         }
     }
 
+}
+
+class ViewSavedPatters: SettingsRouterAction {
+    override func handle(route: SettingsRoute, from source: SettingsTabVC) {
+        let list = ListOfPatternsVC()
+        source.navigationController?.pushViewController(list, animated: true)
+    }
 }
 
 class DrawAction: SettingsRouterAction {

@@ -20,8 +20,8 @@
 		CB2409B5210902760047C2B4 /* CommonQuail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2409B3210902700047C2B4 /* CommonQuail.framework */; };
 		CB2409B6210902760047C2B4 /* CommonQuail.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB2409B3210902700047C2B4 /* CommonQuail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB2409B8210902B50047C2B4 /* SettingsTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2409B7210902B50047C2B4 /* SettingsTabVC.swift */; };
-		CB2409BC2109032B0047C2B4 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2409BA2109032B0047C2B4 /* SettingsTableViewCell.swift */; };
-		CB2409BD2109032B0047C2B4 /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2409BB2109032B0047C2B4 /* SettingsTableViewCell.xib */; };
+		CB2409BC2109032B0047C2B4 /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2409BA2109032B0047C2B4 /* TextTableViewCell.swift */; };
+		CB2409BD2109032B0047C2B4 /* TextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2409BB2109032B0047C2B4 /* TextTableViewCell.xib */; };
 		CB2409BF210903450047C2B4 /* SettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2409BE210903450047C2B4 /* SettingsItem.swift */; };
 		CB2409C1210907F80047C2B4 /* SettingsTabDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2409C0210907F80047C2B4 /* SettingsTabDataProvider.swift */; };
 		CB2409C3210909850047C2B4 /* PinToSuperview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2409C2210909850047C2B4 /* PinToSuperview.swift */; };
@@ -35,6 +35,12 @@
 		CB2409DD210923F70047C2B4 /* MagicalRecord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2409DB210923F00047C2B4 /* MagicalRecord.framework */; };
 		CB2409DE210923F70047C2B4 /* MagicalRecord.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB2409DB210923F00047C2B4 /* MagicalRecord.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB2409E02109244A0047C2B4 /* PatternRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2409DF2109244A0047C2B4 /* PatternRepository.swift */; };
+		CB372C862109AED300814F40 /* DrawAndSaveRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB372C852109AED300814F40 /* DrawAndSaveRouter.swift */; };
+		CB372C892109B19400814F40 /* ListOfPatternsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB372C882109B19400814F40 /* ListOfPatternsVC.swift */; };
+		CBC959CC2109B6320008FF94 /* PatternsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC959CB2109B6320008FF94 /* PatternsProvider.swift */; };
+		CBC959CE2109B8C20008FF94 /* UIImage+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC959CD2109B8C20008FF94 /* UIImage+UIView.swift */; };
+		CBC959D22109E2080008FF94 /* PatternRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC959D12109E2080008FF94 /* PatternRecognizer.swift */; };
+		CBC959D6210A04310008FF94 /* RecognizeTabDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC959D5210A04310008FF94 /* RecognizeTabDecorator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,8 +73,8 @@
 		CB2409AF2108FC630047C2B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CB2409B3210902700047C2B4 /* CommonQuail.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonQuail.framework; path = Carthage/Build/iOS/CommonQuail.framework; sourceTree = "<group>"; };
 		CB2409B7210902B50047C2B4 /* SettingsTabVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTabVC.swift; sourceTree = "<group>"; };
-		CB2409BA2109032B0047C2B4 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
-		CB2409BB2109032B0047C2B4 /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
+		CB2409BA2109032B0047C2B4 /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
+		CB2409BB2109032B0047C2B4 /* TextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextTableViewCell.xib; sourceTree = "<group>"; };
 		CB2409BE210903450047C2B4 /* SettingsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItem.swift; sourceTree = "<group>"; };
 		CB2409C0210907F80047C2B4 /* SettingsTabDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabDataProvider.swift; sourceTree = "<group>"; };
 		CB2409C2210909850047C2B4 /* PinToSuperview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinToSuperview.swift; sourceTree = "<group>"; };
@@ -81,6 +87,12 @@
 		CB2409D9210922D60047C2B4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		CB2409DB210923F00047C2B4 /* MagicalRecord.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MagicalRecord.framework; path = Carthage/Build/iOS/MagicalRecord.framework; sourceTree = "<group>"; };
 		CB2409DF2109244A0047C2B4 /* PatternRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRepository.swift; sourceTree = "<group>"; };
+		CB372C852109AED300814F40 /* DrawAndSaveRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawAndSaveRouter.swift; sourceTree = "<group>"; };
+		CB372C882109B19400814F40 /* ListOfPatternsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfPatternsVC.swift; sourceTree = "<group>"; };
+		CBC959CB2109B6320008FF94 /* PatternsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsProvider.swift; sourceTree = "<group>"; };
+		CBC959CD2109B8C20008FF94 /* UIImage+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+UIView.swift"; sourceTree = "<group>"; };
+		CBC959D12109E2080008FF94 /* PatternRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRecognizer.swift; sourceTree = "<group>"; };
+		CBC959D5210A04310008FF94 /* RecognizeTabDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizeTabDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				CB24097E2108F2D30047C2B4 /* RecognizeTabVC.swift */,
+				CBC959D5210A04310008FF94 /* RecognizeTabDecorator.swift */,
 			);
 			path = RecognizeTab;
 			sourceTree = "<group>";
@@ -160,6 +173,7 @@
 		CB2409A32108F8BD0047C2B4 /* SettingsTab */ = {
 			isa = PBXGroup;
 			children = (
+				CB372C872109B17200814F40 /* ListOfPatterns */,
 				CB2409CD210913B90047C2B4 /* Router */,
 				CB2409C721090D630047C2B4 /* DrawAndSave */,
 				CB2409B9210902FF0047C2B4 /* Items */,
@@ -172,6 +186,8 @@
 		CB2409A42108FBDF0047C2B4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CBC959D02109E1F40008FF94 /* Recognizer */,
+				CBC959CF2109B8C50008FF94 /* UImage */,
 				CB2409CA210913240047C2B4 /* Router */,
 				CB2409C421090ACC0047C2B4 /* TableViewCell */,
 				CB2409B02108FD990047C2B4 /* SnapKit */,
@@ -208,8 +224,8 @@
 		CB2409B9210902FF0047C2B4 /* Items */ = {
 			isa = PBXGroup;
 			children = (
-				CB2409BA2109032B0047C2B4 /* SettingsTableViewCell.swift */,
-				CB2409BB2109032B0047C2B4 /* SettingsTableViewCell.xib */,
+				CB2409BA2109032B0047C2B4 /* TextTableViewCell.swift */,
+				CB2409BB2109032B0047C2B4 /* TextTableViewCell.xib */,
 				CB2409BE210903450047C2B4 /* SettingsItem.swift */,
 			);
 			path = Items;
@@ -226,9 +242,10 @@
 		CB2409C721090D630047C2B4 /* DrawAndSave */ = {
 			isa = PBXGroup;
 			children = (
-				CB2409D52109203B0047C2B4 /* DrawAndSaveViewDecorator.swift */,
+				CB372C842109AEC700814F40 /* Router */,
 				CB2409D0210919FB0047C2B4 /* Views */,
 				CB2409C821090D830047C2B4 /* DrawAndSaveVC.swift */,
+				CB2409D52109203B0047C2B4 /* DrawAndSaveViewDecorator.swift */,
 			);
 			path = DrawAndSave;
 			sourceTree = "<group>";
@@ -264,6 +281,39 @@
 				CB2409DF2109244A0047C2B4 /* PatternRepository.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CB372C842109AEC700814F40 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CB372C852109AED300814F40 /* DrawAndSaveRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CB372C872109B17200814F40 /* ListOfPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				CB372C882109B19400814F40 /* ListOfPatternsVC.swift */,
+				CBC959CB2109B6320008FF94 /* PatternsProvider.swift */,
+			);
+			path = ListOfPatterns;
+			sourceTree = "<group>";
+		};
+		CBC959CF2109B8C50008FF94 /* UImage */ = {
+			isa = PBXGroup;
+			children = (
+				CBC959CD2109B8C20008FF94 /* UIImage+UIView.swift */,
+			);
+			path = UImage;
+			sourceTree = "<group>";
+		};
+		CBC959D02109E1F40008FF94 /* Recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				CBC959D12109E2080008FF94 /* PatternRecognizer.swift */,
+			);
+			path = Recognizer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,7 +377,7 @@
 			files = (
 				CB2409892108F2D40047C2B4 /* LaunchScreen.storyboard in Resources */,
 				CB2409AB2108FC510047C2B4 /* Localizable.strings in Resources */,
-				CB2409BD2109032B0047C2B4 /* SettingsTableViewCell.xib in Resources */,
+				CB2409BD2109032B0047C2B4 /* TextTableViewCell.xib in Resources */,
 				CB2409862108F2D40047C2B4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +390,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB2409C1210907F80047C2B4 /* SettingsTabDataProvider.swift in Sources */,
+				CBC959CC2109B6320008FF94 /* PatternsProvider.swift in Sources */,
+				CBC959D22109E2080008FF94 /* PatternRecognizer.swift in Sources */,
 				CB2409B8210902B50047C2B4 /* SettingsTabVC.swift in Sources */,
 				CB2409E02109244A0047C2B4 /* PatternRepository.swift in Sources */,
 				CB2409C3210909850047C2B4 /* PinToSuperview.swift in Sources */,
@@ -347,15 +399,19 @@
 				CB2409C921090D830047C2B4 /* DrawAndSaveVC.swift in Sources */,
 				CB2409A72108FC050047C2B4 /* String+Localized.swift in Sources */,
 				CB2409A12108F7F00047C2B4 /* TabContainerProvider.swift in Sources */,
+				CB372C862109AED300814F40 /* DrawAndSaveRouter.swift in Sources */,
 				CB2409942108F3630047C2B4 /* TabContainer.swift in Sources */,
 				CB2409DA210922D60047C2B4 /* Model.xcdatamodeld in Sources */,
-				CB2409BC2109032B0047C2B4 /* SettingsTableViewCell.swift in Sources */,
+				CB2409BC2109032B0047C2B4 /* TextTableViewCell.swift in Sources */,
 				CB2409D62109203B0047C2B4 /* DrawAndSaveViewDecorator.swift in Sources */,
+				CB372C892109B19400814F40 /* ListOfPatternsVC.swift in Sources */,
 				CB2409BF210903450047C2B4 /* SettingsItem.swift in Sources */,
 				CB24097D2108F2D30047C2B4 /* AppDelegate.swift in Sources */,
 				CB24097F2108F2D30047C2B4 /* RecognizeTabVC.swift in Sources */,
 				CB2409D221091A0C0047C2B4 /* DrawingView.swift in Sources */,
 				CB2409C621090B3E0047C2B4 /* TableViewCell+CommonQuail.swift in Sources */,
+				CBC959CE2109B8C20008FF94 /* UIImage+UIView.swift in Sources */,
+				CBC959D6210A04310008FF94 /* RecognizeTabDecorator.swift in Sources */,
 				CB2409CC210913520047C2B4 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

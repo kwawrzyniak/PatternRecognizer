@@ -9,6 +9,6 @@
 import UIKit
 import CommonQuail
 
-class SettingsTableViewCell: UITableViewCell {
+class TextTableViewCell: UITableViewCell {
     @IBOutlet weak var settingsTitleLabel: UILabel!
 }

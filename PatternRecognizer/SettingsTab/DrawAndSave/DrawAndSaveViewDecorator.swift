@@ -8,36 +8,36 @@
 
 import UIKit
 
-class DrawAndSaveViewDecorator {
+class DrawAndSaveViewDecoratorImpl: ViewControllerDecorator {
 
-    weak var vc: DrawAndSaveVC?
+    weak var controllerToDecorate: DrawAndSaveVC?
 
     init(vc: DrawAndSaveVC) {
-        self.vc = vc
+        self.controllerToDecorate = vc
     }
 
     func decorate() {
-        guard let vc = vc else {
+        guard let vc = controllerToDecorate else {
             return
         }
-        
+
         let drawingNameTextField = UITextField()
         let drawingView = DrawingView(frame: .zero)
-        
+
         vc.view.addSubview(drawingView)
         vc.view.addSubview(drawingNameTextField)
-        
+
         drawingView.snp.makeConstraints { (maker) in
             maker.top.equalToSuperview().offset(120)
             maker.left.equalToSuperview()
             maker.right.equalToSuperview()
             maker.bottom.equalToSuperview()
         }
-        
+
         drawingNameTextField.borderStyle = .roundedRect
         drawingNameTextField.returnKeyType = .done
         drawingNameTextField.placeholder = "draw_and_save.name.textfield.placeholder".localized
-        
+
         drawingNameTextField.snp.makeConstraints { (maker) in
             maker.top.equalToSuperview().offset(76)
             maker.bottom.equalTo(drawingView.snp.top).offset(-10)

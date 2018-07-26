@@ -1,23 +1,20 @@
 //
-//  SettingsTabVC.swift
+//  ListOfPatterns.swift
 //  PatternRecognizer
 //
-//  Created by Karol Wawrzyniak on 25/07/2018.
+//  Created by Karol Wawrzyniak on 26/07/2018.
 //  Copyright © 2018 KAWA. All rights reserved.
 //
 
 import UIKit
-import SnapKit
 import CommonQuail
 
-class SettingsTabVC: UIViewController {
-
-    let provider = SettingsTabDataProviderImpl()
-    let router = SettingsRouter()
+class ListOfPatternsVC: UIViewController {
 
     var manager: TableViewManager?
-
     weak var tableView: UITableView?
+
+    let provider: PatternListProvider = PatternListProviderImpl()
 
     override func loadView() {
         super.loadView()
@@ -35,26 +32,18 @@ class SettingsTabVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.white
         manager?.addData(provider.requestItems())
-        view.backgroundColor = UIColor.orange
     }
-
 }
 
-extension SettingsTabVC: TableViewManagerDelegate {
-
-    func didSelect(_ item: TableViewData) {
-
-        guard let item = item as? SettingsItem else {
-            return
-        }
-
-        let route = SettingsRoute.init(item.flowAtClick)
-        router.perfrom(route, from: self)
-    }
+extension ListOfPatternsVC: TableViewManagerDelegate {
 
     func pinDelegate(_ item: TableViewData) {
 
     }
-}
 
+    func didSelect(_ item: TableViewData) {
+
+    }
+}
