@@ -39,16 +39,23 @@
 		CB372C892109B19400814F40 /* ListOfPatternsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB372C882109B19400814F40 /* ListOfPatternsVC.swift */; };
 		CB3806C8210A43CA00DD6ACF /* PatternRecognizerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3806C7210A43CA00DD6ACF /* PatternRecognizerSpec.swift */; };
 		CB3806CB210A44E300DD6ACF /* FakeTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3806CA210A44E300DD6ACF /* FakeTouch.swift */; };
+		CB3806D0210A52E800DD6ACF /* Unbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3806CD210A52DA00DD6ACF /* Unbox.framework */; };
+		CB3806D1210A52E800DD6ACF /* Unbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB3806CD210A52DA00DD6ACF /* Unbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB3806D2210A52E800DD6ACF /* Wrap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3806CC210A52D900DD6ACF /* Wrap.framework */; };
+		CB3806D3210A52E800DD6ACF /* Wrap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB3806CC210A52D900DD6ACF /* Wrap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB3806D6210A535200DD6ACF /* HttpHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3806D5210A535200DD6ACF /* HttpHandler.swift */; };
+		CB3806D8210A55C800DD6ACF /* PatternItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3806D7210A55C800DD6ACF /* PatternItem.swift */; };
+		CB3806DB210A56F600DD6ACF /* FetchPatternsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3806DA210A56F600DD6ACF /* FetchPatternsRequest.swift */; };
+		CB3806E0210A5DBE00DD6ACF /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3806DC210A5DB600DD6ACF /* Nimble.framework */; };
+		CB3806E1210A5DBE00DD6ACF /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3806DD210A5DB600DD6ACF /* Quick.framework */; };
+		CB3806E2210A5DD300DD6ACF /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB3806DC210A5DB600DD6ACF /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB3806E3210A5DD300DD6ACF /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB3806DD210A5DB600DD6ACF /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBC959CC2109B6320008FF94 /* PatternsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC959CB2109B6320008FF94 /* PatternsProvider.swift */; };
 		CBC959CE2109B8C20008FF94 /* UIImage+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC959CD2109B8C20008FF94 /* UIImage+UIView.swift */; };
 		CBC959D22109E2080008FF94 /* PatternRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC959D12109E2080008FF94 /* PatternRecognizer.swift */; };
 		CBC959D6210A04310008FF94 /* RecognizeTabDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC959D5210A04310008FF94 /* RecognizeTabDecorator.swift */; };
 		CBC959DE210A21EF0008FF94 /* PatternRecognizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC959DD210A21EF0008FF94 /* PatternRecognizerTests.swift */; };
-		CBC959E7210A22190008FF94 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC959E5210A22190008FF94 /* Nimble.framework */; };
-		CBC959E8210A22190008FF94 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC959E6210A22190008FF94 /* Quick.framework */; };
 		CBC959EB210A23160008FF94 /* PatternRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC959E9210A22470008FF94 /* PatternRepositorySpec.swift */; };
-		CBC959EF210A24470008FF94 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CBC959E5210A22190008FF94 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CBC959F0210A24470008FF94 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CBC959E6210A22190008FF94 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +78,8 @@
 				CB2409B6210902760047C2B4 /* CommonQuail.framework in Embed Frameworks */,
 				CB24099E2108F5480047C2B4 /* SnapKit.framework in Embed Frameworks */,
 				CB2409DE210923F70047C2B4 /* MagicalRecord.framework in Embed Frameworks */,
+				CB3806D1210A52E800DD6ACF /* Unbox.framework in Embed Frameworks */,
+				CB3806D3210A52E800DD6ACF /* Wrap.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,8 +90,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CBC959EF210A24470008FF94 /* Nimble.framework in CopyFiles */,
-				CBC959F0210A24470008FF94 /* Quick.framework in CopyFiles */,
+				CB3806E2210A5DD300DD6ACF /* Nimble.framework in CopyFiles */,
+				CB3806E3210A5DD300DD6ACF /* Quick.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +129,13 @@
 		CB372C882109B19400814F40 /* ListOfPatternsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfPatternsVC.swift; sourceTree = "<group>"; };
 		CB3806C7210A43CA00DD6ACF /* PatternRecognizerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRecognizerSpec.swift; sourceTree = "<group>"; };
 		CB3806CA210A44E300DD6ACF /* FakeTouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTouch.swift; sourceTree = "<group>"; };
+		CB3806CC210A52D900DD6ACF /* Wrap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Wrap.framework; path = Carthage/Build/iOS/Wrap.framework; sourceTree = "<group>"; };
+		CB3806CD210A52DA00DD6ACF /* Unbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Unbox.framework; path = Carthage/Build/iOS/Unbox.framework; sourceTree = "<group>"; };
+		CB3806D5210A535200DD6ACF /* HttpHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHandler.swift; sourceTree = "<group>"; };
+		CB3806D7210A55C800DD6ACF /* PatternItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternItem.swift; sourceTree = "<group>"; };
+		CB3806DA210A56F600DD6ACF /* FetchPatternsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPatternsRequest.swift; sourceTree = "<group>"; };
+		CB3806DC210A5DB600DD6ACF /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		CB3806DD210A5DB600DD6ACF /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		CBC959CB2109B6320008FF94 /* PatternsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsProvider.swift; sourceTree = "<group>"; };
 		CBC959CD2109B8C20008FF94 /* UIImage+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+UIView.swift"; sourceTree = "<group>"; };
 		CBC959D12109E2080008FF94 /* PatternRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRecognizer.swift; sourceTree = "<group>"; };
@@ -127,8 +143,6 @@
 		CBC959DB210A21EF0008FF94 /* PatternRecognizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatternRecognizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC959DD210A21EF0008FF94 /* PatternRecognizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRecognizerTests.swift; sourceTree = "<group>"; };
 		CBC959DF210A21EF0008FF94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBC959E5210A22190008FF94 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		CBC959E6210A22190008FF94 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		CBC959E9210A22470008FF94 /* PatternRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRepositorySpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +154,8 @@
 				CB24099D2108F5480047C2B4 /* SnapKit.framework in Frameworks */,
 				CB2409B5210902760047C2B4 /* CommonQuail.framework in Frameworks */,
 				CB2409DD210923F70047C2B4 /* MagicalRecord.framework in Frameworks */,
+				CB3806D0210A52E800DD6ACF /* Unbox.framework in Frameworks */,
+				CB3806D2210A52E800DD6ACF /* Wrap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +163,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBC959E8210A22190008FF94 /* Quick.framework in Frameworks */,
-				CBC959E7210A22190008FF94 /* Nimble.framework in Frameworks */,
+				CB3806E1210A5DBE00DD6ACF /* Quick.framework in Frameworks */,
+				CB3806E0210A5DBE00DD6ACF /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +193,7 @@
 		CB24097B2108F2D30047C2B4 /* PatternRecognizer */ = {
 			isa = PBXGroup;
 			children = (
+				CB3806D4210A532100DD6ACF /* Network */,
 				CB2409D7210922BC0047C2B4 /* Model */,
 				CB2409AA2108FC470047C2B4 /* Assets */,
 				CB2409A42108FBDF0047C2B4 /* Utils */,
@@ -202,8 +219,10 @@
 		CB24099A2108F5120047C2B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CBC959E5210A22190008FF94 /* Nimble.framework */,
-				CBC959E6210A22190008FF94 /* Quick.framework */,
+				CB3806DC210A5DB600DD6ACF /* Nimble.framework */,
+				CB3806DD210A5DB600DD6ACF /* Quick.framework */,
+				CB3806CD210A52DA00DD6ACF /* Unbox.framework */,
+				CB3806CC210A52D900DD6ACF /* Wrap.framework */,
 				CB2409DB210923F00047C2B4 /* MagicalRecord.framework */,
 				CB2409B3210902700047C2B4 /* CommonQuail.framework */,
 				CB24099B2108F5410047C2B4 /* SnapKit.framework */,
@@ -347,6 +366,7 @@
 			children = (
 				CB372C882109B19400814F40 /* ListOfPatternsVC.swift */,
 				CBC959CB2109B6320008FF94 /* PatternsProvider.swift */,
+				CB3806D7210A55C800DD6ACF /* PatternItem.swift */,
 			);
 			path = ListOfPatterns;
 			sourceTree = "<group>";
@@ -357,6 +377,23 @@
 				CB3806CA210A44E300DD6ACF /* FakeTouch.swift */,
 			);
 			path = Fakes;
+			sourceTree = "<group>";
+		};
+		CB3806D4210A532100DD6ACF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CB3806D9210A56BC00DD6ACF /* Reqeusts */,
+				CB3806D5210A535200DD6ACF /* HttpHandler.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CB3806D9210A56BC00DD6ACF /* Reqeusts */ = {
+			isa = PBXGroup;
+			children = (
+				CB3806DA210A56F600DD6ACF /* FetchPatternsRequest.swift */,
+			);
+			path = Reqeusts;
 			sourceTree = "<group>";
 		};
 		CBC959CF2109B8C50008FF94 /* UImage */ = {
@@ -495,6 +532,7 @@
 				CBC959D22109E2080008FF94 /* PatternRecognizer.swift in Sources */,
 				CB2409B8210902B50047C2B4 /* SettingsTabVC.swift in Sources */,
 				CB2409E02109244A0047C2B4 /* PatternRepository.swift in Sources */,
+				CB3806D6210A535200DD6ACF /* HttpHandler.swift in Sources */,
 				CB2409C3210909850047C2B4 /* PinToSuperview.swift in Sources */,
 				CB2409CF210913C30047C2B4 /* SettingsRouter.swift in Sources */,
 				CB2409C921090D830047C2B4 /* DrawAndSaveVC.swift in Sources */,
@@ -502,11 +540,13 @@
 				CB2409A12108F7F00047C2B4 /* TabContainerProvider.swift in Sources */,
 				CB372C862109AED300814F40 /* DrawAndSaveRouter.swift in Sources */,
 				CB2409942108F3630047C2B4 /* TabContainer.swift in Sources */,
+				CB3806D8210A55C800DD6ACF /* PatternItem.swift in Sources */,
 				CB2409DA210922D60047C2B4 /* Model.xcdatamodeld in Sources */,
 				CB2409BC2109032B0047C2B4 /* TextTableViewCell.swift in Sources */,
 				CB2409D62109203B0047C2B4 /* DrawAndSaveViewDecorator.swift in Sources */,
 				CB372C892109B19400814F40 /* ListOfPatternsVC.swift in Sources */,
 				CB2409BF210903450047C2B4 /* SettingsItem.swift in Sources */,
+				CB3806DB210A56F600DD6ACF /* FetchPatternsRequest.swift in Sources */,
 				CB24097D2108F2D30047C2B4 /* AppDelegate.swift in Sources */,
 				CB24097F2108F2D30047C2B4 /* RecognizeTabVC.swift in Sources */,
 				CB2409D221091A0C0047C2B4 /* DrawingView.swift in Sources */,

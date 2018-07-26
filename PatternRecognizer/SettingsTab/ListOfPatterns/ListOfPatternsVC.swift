@@ -14,36 +14,49 @@ class ListOfPatternsVC: UIViewController {
     var manager: TableViewManager?
     weak var tableView: UITableView?
 
-    let provider: PatternListProvider = PatternListProviderImpl()
+    var provider: PatternListProvider = PatternListProviderImpl()
 
     override func loadView() {
         super.loadView()
 
         let tableView = UITableView(frame: .zero)
         let manager = TableViewManager.init(tableView: tableView)
-        manager.delegate = self
-
+    
         view.addSubview(tableView)
         tableView.snp.pinToSuperview()
 
         self.manager = manager
         self.tableView = tableView
+
+        let button = UIBarButtonItem.init(barButtonSystemItem: .refresh,
+                                          target: self,
+                                          action: #selector(rightBarButtonAction(sender:)))
+
+        navigationItem.rightBarButtonItem = button
+    }
+
+    @objc func rightBarButtonAction(sender: Any) {
+        provider.fetchRemote()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
+        provider.delegate = self
         manager?.addData(provider.requestItems())
     }
 }
 
-extension ListOfPatternsVC: TableViewManagerDelegate {
+extension ListOfPatternsVC: PatternListProviderDelegate {
 
-    func pinDelegate(_ item: TableViewData) {
-
+    func failedToFetch() {
+        //hmm
     }
 
-    func didSelect(_ item: TableViewData) {
-
+    func didFetchRemotePatterns(data: [TableViewData]) {
+        
+        manager?.removeAllData()
+        manager?.addData(provider.requestItems())
     }
+
 }

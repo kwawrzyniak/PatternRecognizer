@@ -24,16 +24,49 @@ extension Pattern {
 
 }
 
+extension RemotePattern {
+
+    var angles: [Float] {
+
+        let angles = pattern.components(separatedBy: ";").map({ Float($0) }).compactMap { $0 }
+        return angles
+
+    }
+}
+
 protocol PatternRepository {
 
     func allPatternsSorted() -> [Pattern]
 
-    func createPattern(angles: [Float], name: String, image: UIImage) -> Pattern?
+    func createOrUpdatePattern(angles: [Float], name: String, id: String) -> Pattern?
 
     func persist()
 }
 
+extension PatternRepository {
+
+    func createOrUpdatePattern(angles: [Float], name: String) -> Pattern? {
+        return self.createOrUpdatePattern(angles: angles, name: name, id: UUID.init().uuidString)
+    }
+
+}
+
+
 class PatternRepositoryImpl: PatternRepository {
+
+    func createOrUpdatePattern(angles: [Float], name: String, id: String) -> Pattern? {
+
+        let anglesStrings = angles.map { "\($0);" }.reduce("") { $0 + $1 }
+
+        let pattern = Pattern.mr_findFirstOrCreate(byAttribute: "id", withValue: id, in: ctx)
+        
+        pattern.pattern = anglesStrings
+        pattern.name = name
+        pattern.id = id
+
+        return pattern
+    }
+
 
     let ctx: NSManagedObjectContext
 
@@ -48,21 +81,6 @@ class PatternRepositoryImpl: PatternRepository {
 
     func persist() {
         ctx.mr_saveToPersistentStoreAndWait()
-    }
-
-    func createPattern(angles: [Float], name: String, image: UIImage) -> Pattern? {
-        let anglesStrings = angles.map { "\($0);" }.reduce("") { $0 + $1 }
-
-        let pattern = Pattern.mr_createEntity(in: ctx)
-
-        let imageData = UIImageJPEGRepresentation(image, 0.7)
-
-        pattern?.imageData = imageData
-        pattern?.pattern = anglesStrings
-        pattern?.name = name
-        pattern?.id = UUID.init().uuidString
-
-        return pattern
     }
 
 }

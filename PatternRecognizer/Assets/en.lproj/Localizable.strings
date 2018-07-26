@@ -9,6 +9,6 @@
 "recognize.tab.title" = "Recognize";
 "settings.tab.title" = "Settings";
 "settings.draw_new" = "Draw new";
-"settings.load" = "View existings";
+"settings.load" = "View existing";
 "draw_and_save.name.textfield.placeholder" = "First draw, then name your shape";
 "recognize.tab.regognized.label" = "Recognized shape:";

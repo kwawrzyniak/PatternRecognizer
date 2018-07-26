@@ -1,3 +1,6 @@
+github "Quick/Quick"
+github "Quick/Nimble"
+github "JohnSundell/unbox"
 github "MagicalPanda/MagicalRecord"
 github "SnapKit/SnapKit" ~> 4.0.0
 github "kwawrzyniak/CommonQuail" ~> 0.4

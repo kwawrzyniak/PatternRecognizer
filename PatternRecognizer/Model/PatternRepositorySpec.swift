@@ -35,7 +35,7 @@ class PatternRepositorySpec: QuickSpec {
                 var pattern: Pattern!
 
                 beforeEach {
-                    pattern = sut.createPattern(angles: [10, 11], name: "44", image: UIImage())
+                    pattern = sut.createOrUpdatePattern(angles: [10, 11], name: "44")
                 }
 
                 it("should have name 44") {
@@ -47,7 +47,6 @@ class PatternRepositorySpec: QuickSpec {
                     expect(angles).to(equal([10, 11]))
                 }
 
-
             }
 
             describe("Load all patters") {
@@ -55,8 +54,9 @@ class PatternRepositorySpec: QuickSpec {
                 var patterns: [Pattern]!
 
                 beforeEach {
-                    _ = sut.createPattern(angles: [10, 11], name: "44", image: UIImage())
-                    _ = sut.createPattern(angles: [10, 12], name: "45", image: UIImage())
+                    _ = sut.createOrUpdatePattern(angles: [10, 11], name: "44")
+                    _ = sut.createOrUpdatePattern(angles: [10, 12], name: "45")
+                    
                     patterns = sut.allPatternsSorted()
                 }
 
@@ -65,7 +65,6 @@ class PatternRepositorySpec: QuickSpec {
                 }
 
             }
-
         }
     }
 }

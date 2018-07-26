@@ -9,33 +9,54 @@
 import Foundation
 import CommonQuail
 
-protocol PatternListProvider {
-
-    func requestItems() -> [TableViewData]
-
+protocol PatternListProviderDelegate: class {
+    func didFetchRemotePatterns(data: [TableViewData])
+    func failedToFetch()
 }
 
-class PatternItem: GenericTableViewDataItem<TextTableViewCell>, TableViewCellDecorator {
+protocol PatternListProvider {
 
-    let patternName: String
+    var delegate: PatternListProviderDelegate? { get set }
 
-    init(name: String) {
-        patternName = name
-    }
+    func requestItems() -> [TableViewData]
+    func fetchRemote()
 
-    func decorate(cell: UITableViewCellLoadableProtocol) {
-        guard let cell = cell as? TextTableViewCell else {
-            return
-        }
-
-        cell.settingsTitleLabel.text = patternName
-        cell.settingsTitleLabel.backgroundColor = UIColor.green
-    }
 }
 
 class PatternListProviderImpl: PatternListProvider {
 
+    weak var delegate: PatternListProviderDelegate?
+
     let repo: PatternRepository = PatternRepositoryImpl()
+    let httpHandler = HTTPHandlerImpl(baseURL: "https://jestemnawakacjach.com/")
+
+    func fetchRemote() {
+
+        let request = FetchPatternsRequest()
+
+        httpHandler.make(request: request) { [weak self] (result: FetchPatternsResponse?, error) in
+
+            guard let result = result else {
+                self?.delegate?.failedToFetch()
+                return
+            }
+
+            let patterns = result.data.map({ (rp) -> Pattern? in
+                let angles = rp.angles
+                return self?.repo.createOrUpdatePattern(angles: angles, name: rp.name, id: rp.id)
+            }).compactMap { $0 }.map({ (p) -> TableViewData? in
+                guard let name = p.name else {
+                    return nil
+                }
+                return PatternItem(name: name)
+            }).compactMap { $0 }
+
+            self?.repo.persist()
+            
+            self?.delegate?.didFetchRemotePatterns(data: patterns)
+        }
+
+    }
 
     func requestItems() -> [TableViewData] {
 

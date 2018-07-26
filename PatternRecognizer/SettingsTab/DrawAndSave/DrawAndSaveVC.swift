@@ -13,6 +13,7 @@ class DrawAndSaveVC: UIViewController {
 
     weak var drawingNameTextField: UITextField?
     weak var drawingView: DrawingView?
+    
     var router = DrawAndSaveRouter()
     var repo: PatternRepository = PatternRepositoryImpl()
 
@@ -42,12 +43,7 @@ extension DrawAndSaveVC: UITextFieldDelegate {
             return false
         }
 
-        guard let drawingView = drawingView else {
-            return false
-        }
-        
-        let shapeImage = UIImage.imageWithView(drawingView)
-        _ = repo.createPattern(angles: angles, name: text, image: shapeImage)
+        _ = repo.createOrUpdatePattern(angles: angles, name: text)
         repo.persist()
         textField.resignFirstResponder()
         let route = DrawAndSaveRoute.init(.pop)
